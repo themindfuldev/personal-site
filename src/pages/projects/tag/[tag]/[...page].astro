@@ -37,7 +37,7 @@ const params = Astro.params;
       </div>
     ) : (
       <ul>
-        {page.data.map((project) => (
+        {page.data.map((project, index) => (
           <>
             <HorizontalCard
               title={project.data.title}
@@ -48,7 +48,7 @@ const params = Astro.params;
               badge={project.data.badge}
               tags={project.data.tags}
             />
-            <div class="divider my-0" />
+            {(index < page.data.length - 1) && <div class="divider my-0" />}
           </>
         ))}
       </ul>

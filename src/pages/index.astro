@@ -6,7 +6,7 @@ import createSlug from "../lib/createSlug"
 
 const projects = (await getCollection("projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const last_projects = projects.slice(0, 3);
+const lastProjects = projects.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -27,11 +27,11 @@ const last_projects = projects.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest projects</div>
+    <div class="text-3xl w-full font-bold my-5">Latest projects</div>
   </div>
 
   {
-    last_projects.map((project) => (
+    lastProjects.map((project, index) => (
       <>
         <HorizontalCard
           title={project.data.title}
@@ -41,7 +41,7 @@ const last_projects = projects.slice(0, 3);
           target="_self"
           badge={project.data.badge}
         />
-        <div class="divider my-0" />
+        {(index < lastProjects.length - 1) && <div class="divider my-0" />}
       </>
     ))
   }
