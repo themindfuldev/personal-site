@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout title="Myself" sideBarActiveItemID="myself">
@@ -67,4 +68,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <li>trying to make the world a better place</li>
     </ul>
   </div>
+
+  <div class="w-full">
+    <Image format="webp" width={1024} height={1365} src="/me-and-sherlock.webp" alt="Tiago's face" />
+  </div>
+
 </BaseLayout>
