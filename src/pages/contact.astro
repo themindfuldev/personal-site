@@ -12,8 +12,40 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>  
 
   <form id="form" method="POST" data-astro-reload>
-    <input type="hidden" name="access_key" value="c3b21ec5-0bc2-4617-9e51-badb87f5db5c">
-    
+    <input type="hidden" name="access_key" value="c3b21ec5-0bc2-4617-9e51-badb87f5db5c" />
+
+    <div class="mb-8">
+      <div id="success-message" role="alert" class="alert alert-success hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 shrink-0 stroke-current"
+          fill="none"
+          viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>test</span>
+      </div>
+
+      <div id="error-message" role="alert" class="alert alert-error hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 shrink-0 stroke-current"
+          fill="none"
+          viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>Something went wrong!</span>
+      </div>
+    </div>
+  
     <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
       <div class="sm:col-span-4">
         <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Your name:</label>
@@ -37,6 +69,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
 
       <div class="col-span-full">
+        <div class="h-captcha" data-captcha="true"></div>
+      </div>
+
+      <div class="col-span-full">
         <button id="submit-btn" type="submit" class="btn btn-secondary btn-block md:w-auto">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity))); transform: ;msFilter:;"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg> Send
         </button>
@@ -48,38 +84,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </form>
 
-  <div class="mt-8">
-    <div id="success-message" role="alert" class="alert alert-success hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 shrink-0 stroke-current"
-        fill="none"
-        viewBox="0 0 24 24">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-      <span>test</span>
-    </div>
-
-    <div id="error-message" role="alert" class="alert alert-error hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 shrink-0 stroke-current"
-        fill="none"
-        viewBox="0 0 24 24">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-      <span>Something went wrong!</span>
-    </div>
-  </div>
-
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </BaseLayout>
 
 <script is:inline>
@@ -91,17 +96,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    submitButton.classList.add("hidden");
-    sendingMessage.classList.remove("hidden");
-
     const successMessage = document.getElementById('success-message');
     successMessage.classList.add("hidden");
     const errorMessage = document.getElementById('error-message');
     errorMessage.classList.add("hidden");    
+    let messageElement;    
+    
+    // Client-side validation
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+    
+    if (!hCaptcha) {
+      errorMessage.lastElementChild.innerText = "Please fill out captcha field.";
+      errorMessage.classList.remove("hidden");
+      errorMessage.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
     
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
+    object.subject = `[tiagoromero.me] Message from ${object.name}`;
     const json = JSON.stringify(object);
+
+    submitButton.classList.add("hidden");
+    sendingMessage.classList.remove("hidden");
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -114,25 +131,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       .then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
+          messageElement = successMessage;
           form.reset();
-          successMessage.lastElementChild.innerText = json.message;
-          successMessage.classList.remove("hidden");
-          successMessage.scrollIntoView({ behavior: "smooth" });
         } else {
           console.log(response);
-          errorMessage.lastElementChild.innerText = json.message;
-          errorMessage.classList.remove("hidden");
-          errorMessage.scrollIntoView({ behavior: "smooth" });
+          messageElement = errorMessage;
         }
+        messageElement.lastElementChild.innerText = json.message;
       })
       .catch(error => {
         console.log(error);
-        errorMessage.classList.remove("hidden");
-        errorMessage.scrollIntoView({ behavior: "smooth" });
+        errorMessage.lastElementChild.innerText = "Something went wrong.";
+        messageElement = errorMessage;
       })
       .then(function() {
+        messageElement.classList.remove("hidden");
         submitButton.classList.remove("hidden");
         sendingMessage.classList.add("hidden");
+        setTimeout(() => {
+          messageElement.scrollIntoView({ behavior: "smooth", block: "end" });
+          messageElement = null;
+        }, 0);
       });
     });
   })(); 
