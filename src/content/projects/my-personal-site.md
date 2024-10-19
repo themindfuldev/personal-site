@@ -9,4 +9,4 @@ tags: ["website", "2024"]
 
 My personal website you're browsing right now, redone in 2024. Powered by Astro, Tailwind, DaisyUI using the Astrofy Template.
 
-More info: [github.com/themindfuldev/personal-site](https://github.com/themindfuldev/personal-site)
+More info: [github.com/themindfuldev/personal-site](https://github.com/themindfuldev/personal-site).
