@@ -4,10 +4,10 @@ description: "My wife Cintia's personal website, redone in 2024. Powered by Astr
 pubDate: "Oct 18 2024"
 heroImage: "/cintia-personal-website.webp"
 badge: "Live"
-tags: ["website", "2024"]
+tags: ["website"]
 ---
 
-My personal website you're browsing right now, redone in 2024. Powered by Astro, Tailwind, UnoCSS using the Brutal theme.
+My wife Cintia's personal website, redone in 2024. Powered by Astro, Tailwind, UnoCSS using the Brutal theme.
 
 Check it out at: [cintiaromero.com](https://cintiaromero.com/).
 

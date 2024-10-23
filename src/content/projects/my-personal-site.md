@@ -4,7 +4,7 @@ description: "My personal website you're browsing right now, redone in 2024. Pow
 pubDate: "Oct 10 2024"
 heroImage: "/my-personal-website.webp"
 badge: "Live"
-tags: ["website", "2024"]
+tags: ["website"]
 ---
 
 My personal website you're browsing right now, redone in 2024. Powered by Astro, Tailwind, DaisyUI using the Astrofy Template.
