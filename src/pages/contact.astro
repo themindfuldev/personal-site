@@ -8,11 +8,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <div class="mb-10">
-    If you want to discuss anything with me, use the form below to contact me. It may take 48h for me to get back to you. PS: At this moment, I'm not actively looking for new engagements.  
-  </div>  
+    If you want to discuss anything with me, use the form below to contact me.
+    It may take 48h for me to get back to you. PS: At this moment, I'm not
+    actively looking for new engagements.
+  </div>
 
   <form id="form" method="POST" data-astro-reload>
-    <input type="hidden" name="access_key" value="c3b21ec5-0bc2-4617-9e51-badb87f5db5c" />
+    <input
+      type="hidden"
+      name="access_key"
+      value="c3b21ec5-0bc2-4617-9e51-badb87f5db5c"
+    />
 
     <div class="mb-8 w-full md:w-auto">
       <div id="success-message" role="alert" class="alert alert-success hidden">
@@ -20,12 +26,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6 shrink-0 stroke-current"
           fill="none"
-          viewBox="0 0 24 24">
+          viewBox="0 0 24 24"
+        >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <span></span>
       </div>
@@ -35,36 +42,71 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6 shrink-0 stroke-current"
           fill="none"
-          viewBox="0 0 24 24">
+          viewBox="0 0 24 24"
+        >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
         </svg>
         <span></span>
       </div>
     </div>
-  
+
     <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
       <div class="sm:col-span-4">
-        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Your name:</label>
+        <label
+          for="name"
+          class="block text-sm font-medium leading-6 text-gray-900"
+          >Your name:</label
+        >
         <div class="mt-2">
-          <input id="name" type="text" name="name" required autocomplete="on" class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            autocomplete="on"
+            class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          />
         </div>
       </div>
 
       <div class="sm:col-span-4">
-        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Your e-mail address:</label>
+        <label
+          for="email"
+          class="block text-sm font-medium leading-6 text-gray-900"
+          >Your e-mail address:</label
+        >
         <div class="mt-2">
-          <input id="email" type="email" name="email" required autocomplete="on" class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            autocomplete="on"
+            class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          />
         </div>
       </div>
 
       <div class="col-span-full">
-        <label for="message" class="block text-sm font-medium leading-6 text-gray-900">Your message:</label>
+        <label
+          for="message"
+          class="block text-sm font-medium leading-6 text-gray-900"
+          >Your message:</label
+        >
         <div class="mt-2">
-          <textarea id="message" name="message" required rows="6" minlength="50" class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="6"
+            minlength="50"
+            class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          ></textarea>
         </div>
       </div>
 
@@ -73,86 +115,103 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
 
       <div class="col-span-full">
-        <button id="submit-btn" type="submit" class="btn btn-secondary btn-block md:w-auto">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity))); transform: ;msFilter:;"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg> Send
+        <button
+          id="submit-btn"
+          type="submit"
+          class="btn btn-outline btn-default btn-block md:w-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: currentColor; transform: ;msFilter:;"
+            ><path
+              d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
+            ></path></svg
+          > Send
         </button>
         <div id="sending-message" class="flex hidden">
           <span class="loading loading-spinner mr-2"></span>
-           Sending...
+          Sending...
         </div>
       </div>
     </div>
   </form>
 
-  <script is:inline src="https://web3forms.com/client/script.js" async defer></script>
+  <script is:inline src="https://web3forms.com/client/script.js" async defer
+  ></script>
 </BaseLayout>
 
 <script is:inline>
-(() => {
-  const form = document.getElementById('form');
-  const submitButton = document.getElementById('submit-btn');
-  const sendingMessage = document.getElementById('sending-message');
-  
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
+  (() => {
+    const form = document.getElementById("form");
+    const submitButton = document.getElementById("submit-btn");
+    const sendingMessage = document.getElementById("sending-message");
 
-    const successMessage = document.getElementById('success-message');
-    successMessage.classList.add("hidden");
-    const errorMessage = document.getElementById('error-message');
-    errorMessage.classList.add("hidden");    
-    let messageElement;    
-    
-    // Client-side validation
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-    
-    if (!hCaptcha) {
-      errorMessage.lastElementChild.innerText = "Please fill out captcha field.";
-      errorMessage.classList.remove("hidden");
-      errorMessage.scrollIntoView({ behavior: "smooth" });
-      return;
-    }
-    
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    object.subject = `[tiagoromero.me] Message from ${object.name}`;
-    const json = JSON.stringify(object);
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    submitButton.classList.add("hidden");
-    sendingMessage.classList.remove("hidden");
+      const successMessage = document.getElementById("success-message");
+      successMessage.classList.add("hidden");
+      const errorMessage = document.getElementById("error-message");
+      errorMessage.classList.add("hidden");
+      let messageElement;
 
-    fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
+      // Client-side validation
+      const hCaptcha = form.querySelector(
+        "textarea[name=h-captcha-response]",
+      ).value;
+
+      if (!hCaptcha) {
+        errorMessage.lastElementChild.innerText =
+          "Please fill out captcha field.";
+        errorMessage.classList.remove("hidden");
+        errorMessage.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      object.subject = `[tiagoromero.me] Message from ${object.name}`;
+      const json = JSON.stringify(object);
+
+      submitButton.classList.add("hidden");
+      sendingMessage.classList.remove("hidden");
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: json
+        body: json,
       })
-      .then(async (response) => {
-        let json = await response.json();
-        if (response.status == 200) {
-          messageElement = successMessage;
-          form.reset();
-        } else {
-          console.log(response);
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            messageElement = successMessage;
+            form.reset();
+          } else {
+            console.log(response);
+            messageElement = errorMessage;
+          }
+          messageElement.lastElementChild.innerText = json.message;
+        })
+        .catch((error) => {
+          console.log(error);
+          errorMessage.lastElementChild.innerText = "Something went wrong.";
           messageElement = errorMessage;
-        }
-        messageElement.lastElementChild.innerText = json.message;
-      })
-      .catch(error => {
-        console.log(error);
-        errorMessage.lastElementChild.innerText = "Something went wrong.";
-        messageElement = errorMessage;
-      })
-      .then(function() {
-        messageElement.classList.remove("hidden");
-        submitButton.classList.remove("hidden");
-        sendingMessage.classList.add("hidden");
-        setTimeout(() => {
-          messageElement.scrollIntoView({ behavior: "smooth", block: "end" });
-          messageElement = null;
-        }, 0);
-      });
+        })
+        .then(function () {
+          messageElement.classList.remove("hidden");
+          submitButton.classList.remove("hidden");
+          sendingMessage.classList.add("hidden");
+          setTimeout(() => {
+            messageElement.scrollIntoView({ behavior: "smooth", block: "end" });
+            messageElement = null;
+          }, 0);
+        });
     });
-  })(); 
-  </script>
+  })();
+</script>
