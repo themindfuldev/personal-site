@@ -1,6 +1,6 @@
 ---
 title: "Articles"
-description: "I published more than a dozen articles in renowned websites and magazines such as InfoQ, Free Code Camp, Dev.to, DZone, Avenue Code Snippets, AirPair, DevMedia and Java Magazine. Here's a collection of my articles."
+description: "I published more than a dozen articles in renowned websites and magazines such as InfoQ, Free Code Camp, Dev.to, DZone, Avenue Code Snippets, AirPair, DevMedia and Java Magazine."
 pubDate: "Jan 1 2024"
 heroImage: "/articles.webp"
 badge: ""

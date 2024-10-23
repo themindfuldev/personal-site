@@ -1,6 +1,6 @@
 ---
 title: "Speaking engagements"
-description: "I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Design Conference, Abstractions, DevCon5 and HTML5DevConf, as well as in meetups and corporate training in the USA and Brazil. Here's a collection of my speaking engagements."
+description: "I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Design Conference, Abstractions, DevCon5 and HTML5DevConf, as well as in meetups and corporate training in the USA and Brazil."
 pubDate: "Jan 2 2024"
 heroImage: "/speaking-engagements.jpg"
 badge: ""

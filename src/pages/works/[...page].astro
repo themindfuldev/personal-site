@@ -5,37 +5,37 @@ import { getCollection } from "astro:content";
 import createSlug from "../../lib/createSlug"
 
 export async function getStaticPaths({ paginate }) {
-  const projects = await getCollection("projects");
-  projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  return paginate(projects, { pageSize: 10 });
+  const works = await getCollection("works");
+  works.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return paginate(works, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Works" sideBarActiveItemID="works">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Projects</div>
+    <div class="text-3xl w-full font-bold">Works</div>
   </div>
 
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no projects to show at the moment. Check back later!</p>
+        <p>There are no works to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
-        {page.data.map((projects, index) => (
+        {page.data.map((works, index) => (
           <>
             <HorizontalCard
-              title={projects.data.title}
-              img={projects.data.heroImage}
-              desc={projects.data.description}
-              url={"/projects/" + createSlug(projects.data.title, projects.slug)}
+              title={works.data.title}
+              img={works.data.heroImage}
+              desc={works.data.description}
+              url={"/works/" + createSlug(works.data.title, works.slug)}
               target="_self"
-              badge={projects.data.badge}
-              tags={projects.data.tags}
+              badge={works.data.badge}
+              tags={works.data.tags}
             />
             {(index < page.data.length - 1) && <div class="divider my-0" />}
           </>

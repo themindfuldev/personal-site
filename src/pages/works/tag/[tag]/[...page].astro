@@ -5,13 +5,13 @@ import { getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
 
 export async function getStaticPaths({ paginate }) {
-  const all_projects = await getCollection("projects");
-  const all_tags = all_projects.flatMap((post) => {
+  const all_works = await getCollection("works");
+  const all_tags = all_works.flatMap((post) => {
     return post.data.tags || [];
   });
 
   return all_tags.flatMap((tag) => {
-    const filtred_posts = all_projects.filter((post) => {
+    const filtred_posts = all_works.filter((post) => {
       return post.data.tags?.includes(tag);
     });
     return paginate(filtred_posts, {
@@ -25,28 +25,28 @@ const { page } = Astro.props;
 const params = Astro.params;
 ---
 
-<BaseLayout title={"Projects - " + params.tag} sideBarActiveItemID="projects">
+<BaseLayout title={"Works - " + params.tag} sideBarActiveItemID="works">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Projects - {params.tag}</div>
+    <div class="text-3xl w-full font-bold">Works - {params.tag}</div>
   </div>
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no projects to show at the moment. Check back later!</p>
+        <p>There are no works to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
-        {page.data.map((project, index) => (
+        {page.data.map((work, index) => (
           <>
             <HorizontalCard
-              title={project.data.title}
-              img={project.data.heroImage}
-              desc={project.data.description}
-              url={"/projects/" + createSlug(project.data.title, project.slug)}
+              title={work.data.title}
+              img={work.data.heroImage}
+              desc={work.data.description}
+              url={"/works/" + createSlug(work.data.title, work.slug)}
               target="_self"
-              badge={project.data.badge}
-              tags={project.data.tags}
+              badge={work.data.badge}
+              tags={work.data.tags}
             />
             {(index < page.data.length - 1) && <div class="divider my-0" />}
           </>
