@@ -1,5 +1,5 @@
 ---
-title: "Speaking engagements"
+title: "Speaking"
 description: "I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Design Conference, Abstractions, DevCon5 and HTML5DevConf, as well as in meetups and corporate training in the USA and Brazil."
 pubDate: "Jan 2 2024"
 heroImage: "/speaking-engagements.jpg"
@@ -45,7 +45,7 @@ I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Desi
   - **Blurb:** Depois de aprender acessibilidade na web, esquecer e reaprender duas vezes, Tiago compartilha três regras práticas que ele não esquece mais, e que ele aposta que ficarão na sua cabeça. A partir dessas regras, você encontrará orientações sobre como pensar em acessibilidade na sua rotina.\
   Começaremos com os fundamentos da acessibilidade na web, tipos de impedimentos e como é a legislação sobre acessibilidade nos Estados Unidos e Brasil. Aí, conversaremos sobre os padrões e recomendações de acessibilidade pela W3C e pelo governo brasileiro, e como contribuir para um mundo mais inclusivo.
   - **Event promo:** [On The Road São Carlos terá palestra com engenheiro de software do Pinterest](https://www.braziljs.org/p/on-the-road-sao-carlos-tera-palestra-com-engenheiro-de-software-do-pinterest?utm_source=publication-search).
-  - **Slide deck:** [See my slides on Google Sheets](https://docs.google.com/presentation/d/e/2PACX-1vSwbqJQqDupt9FVM9G-PgaUmMk0wcMsKoJhAUl67Z2VpVqwAsd3ks_wWDevuCayTVSyKrlA6njSdPld/pub?start=false&loop=false&delayms=3000)
+  - **Slide deck:** [See my slides on Google Sheets](https://docs.google.com/presentation/d/e/2PACX-1vSwbqJQqDupt9FVM9G-PgaUmMk0wcMsKoJhAUl67Z2VpVqwAsd3ks_wWDevuCayTVSyKrlA6njSdPld/pub?start=false&loop=false&delayms=3000).
   - **Video:** [See my talk on YouTube](https://www.youtube.com/live/4SSsnglewkY?si=xOGSZGL1OUpzI66P&t=628).
 
 --- 
@@ -84,7 +84,7 @@ I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Desi
       - **Venue:** Bugcrowd, San Francisco, CA, USA      
     - **Event:** [Women Who Code SF Meetup](https://www.womenwhocode.com/)
       - **Dates:** Dec 8, 2016
-      - **Venue:** Macy's.com, San Francisco, CA, USA            
+      - **Venue:** Macys.com, San Francisco, CA, USA            
   - **Language:** English
   - **Blurb:** This talk is about loading code during page load time vs lazy loading, then how to load ES2015 modules both synchronously (during page load) and asynchronously (lazy-load) using System.js over Babel, as well as how to use JSPM and Webpack 2 to bundle your app and resolve dependencies.
   - **Slide deck:** [See my slides on Github Pages](https://themindfuldev.github.io/talk-lazy-loading-es2015-modules/#/).
@@ -100,7 +100,7 @@ I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Desi
       - **Venue:** New York University, New York, NY, USA
     - **Event:** [Women Who Code SF Meetup](https://www.womenwhocode.com/)
       - **Dates:** Oct 26, 2016
-      - **Venue:** Macy's.com, San Francisco, CA, USA            
+      - **Venue:** Macys.com, San Francisco, CA, USA            
   - **Language:** English
   - **Blurb:** This talk is about the essential design patterns for JavaScript applications such as Constructor, Façade and Module, focusing on the different module strategies as CommonJS, AMD and ES2015 Modules.
   - **Slide deck:** [See my slides on Github Pages](https://themindfuldev.github.io/talk-design-patterns-for-javascript-featuring-modules/#/).
@@ -115,7 +115,7 @@ I spoke at several major conferences such as BrazilJS, ForwardJS, Front End Desi
   - **Language:** English
   - **Blurb:** This talk gives 10 pragmatic tips to promote good practices for common scenarios in Backbone.js. 
   - **Slide deck:** [See my slides on Github Pages](https://themindfuldev.github.io/talk-10-tips-for-writing-maintainable-code-in-backbone/#//).
-  - **Video**: [See my video on YouTube](https://www.youtube.com/watch?v=kapSK4aovUs&list=PLK_e420JFUuYbAzcBIOhJGnrk7I1j6lYy)
+  - **Video**: [See my video on YouTube](https://www.youtube.com/watch?v=kapSK4aovUs&list=PLK_e420JFUuYbAzcBIOhJGnrk7I1j6lYy).
 
 --- 
     

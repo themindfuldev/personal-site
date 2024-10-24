@@ -1,13 +1,13 @@
 ---
 title: "Articles"
-description: "I published more than a dozen articles in renowned websites and magazines such as InfoQ, Free Code Camp, Dev.to, DZone, Avenue Code Snippets, AirPair, DevMedia and Java Magazine."
+description: "I published more than a dozen articles in renowned websites and magazines such as InfoQ, Free Code Camp, Dev, DZone, Avenue Code Snippets, AirPair, DevMedia and Java Magazine."
 pubDate: "Jan 1 2024"
 heroImage: "/articles.webp"
 badge: ""
 tags: ["articles"]
 ---
 
-I published dozens of articles in renowned websites and magazines such as InfoQ, Free Code Camp, Dev.to, DZone, Avenue Code Snippets, AirPair, DevMedia and Java Magazine. Here's a collection of my articles:
+I published dozens of articles in renowned websites and magazines such as InfoQ, Free Code Camp, Dev, DZone, Avenue Code Snippets, AirPair, DevMedia and Java Magazine. Here's a collection of my articles:
 
   - [Pragmatic rules of web accessibility that will stick to your mind (en, 2018)](#pragmatic-rules-of-web-accessibility-that-will-stick-to-your-mind-en-2018)
   - [A brief review of Scoping and Hoisting in JavaScript (en, 2018)](#a-brief-review-of-scoping-and-hoisting-in-javascript-en-2018)
@@ -48,30 +48,30 @@ I published dozens of articles in renowned websites and magazines such as InfoQ,
   - **Date:** Sep 10, 2018
   - **Language:** English
   - **Blurb:** Learn how Scoping and Hoisting effect the way code we write will deal with our declarations (such as var, let, const and function) with a few examples.
-  - **Article:** [See my article on Free Code Camp](https://www.freecodecamp.org/news/a-brief-review-of-scoping-and-hoisting-in-javascript-e74c38283b65?source=userActivityShare-a9cf8b3432bf-1536607102)
-  - **Backup link:** [See my article on Medium](https://medium.com/free-code-camp/.a-brief-review-of-scoping-and-hoisting-in-javascript-e74c38283b65)
+  - **Article:** [See my article on Free Code Camp](https://www.freecodecamp.org/news/a-brief-review-of-scoping-and-hoisting-in-javascript-e74c38283b65?source=userActivityShare-a9cf8b3432bf-1536607102).
+  - **Backup link:** [See my article on Medium](https://medium.com/free-code-camp/.a-brief-review-of-scoping-and-hoisting-in-javascript-e74c38283b65).
 
 --- 
 
 ### Refrex! Capture and non-capture groups in ES2018 (en, 2018)
 ![image](/articles-2018c.jpg)
   - **Title:** Refrex! Capture and non-capture groups in ES2018
-  - **Publisher:** [Dev.to](https://dev.to/)
+  - **Publisher:** [Dev](https://dev.to/)
   - **Date:** Sep 8, 2018
   - **Language:** English
   - **Blurb:** Learn about regex capture and non-capture groups with real-life examples, and how to use named capture groups in ES2018.
-  - **Article:** [See my article on Dev.to](https://dev.to/themindfuldev/refrex-capture-and-non-capture-groups-in-es2018-3nj7).
+  - **Article:** [See my article on Dev](https://dev.to/themindfuldev/refrex-capture-and-non-capture-groups-in-es2018-3nj7).
 
 --- 
 
 ### How I redid the DEV badge using Font Awesome (en, 2018)
 ![image](/articles-2018d.png)
   - **Title:** How I redid the DEV badge using Font Awesome
-  - **Publisher:** [Dev.to](https://dev.to/)
+  - **Publisher:** [Dev](https://dev.to/)
   - **Date:** Sep 4, 2018
   - **Language:** English
   - **Blurb:** How I used Font Awesome layering features to make an icon for DEV to put on my portfolio.
-  - **Article:** [See my article on Dev.to](https://dev.to/themindfuldev/how-i-redid-the-dev-badge-using-font-awesome-4k14).
+  - **Article:** [See my article on Dev](https://dev.to/themindfuldev/how-i-redid-the-dev-badge-using-font-awesome-4k14).
 
 --- 
 

@@ -7,7 +7,7 @@ badge: ""
 tags: ["projects"]
 ---
 
-I developed a few personal projects and packages for a variety of use cases. Here's a collection of my projects.
+I developed a few personal projects and packages for a variety of use cases. Here's a collection of my projects:
 
   - [Cintia's personal website](#cintias-personal-website)
   - [My personal website](#my-personal-website)
@@ -112,7 +112,7 @@ describe('the preCondition instruction', function () {
 
 ### Tasker
   - **Date:** Aug 2013
-  - **Description:** This project is meant to illustrate the article I wrote for Java Magazine #123: [Turbinando aplicações Java com REST e Backbone.js (pt, 2014)](/works/articles#turbinando-aplicações-java-com-rest-e-backbonejs-pt-2014)
+  - **Description:** This project is meant to illustrate the article I wrote for Java Magazine #123: [Turbinando aplicações Java com REST e Backbone.js (pt, 2014)](/works/articles/#turbinando-aplica%C3%A7%C3%B5es-java-com-rest-e-backbonejs-pt-2014)
   - **Motivation:** Tasker is a web application using Backbone.js and Handlebars.js on the client-side and Play! over Java on the server-side. This application simulates a very simple Kanban board based on Agile methodologies. Basically, the board can have multiple projects, each project can have multiple stories and each story can have multiple issues, which can be either task, bug or enhancement.\
 The user can create and remove projects, stories and issues, and also move issues around 4 lanes representing its possible status: Backlog, In Progress, Verify and Signed Off.
   - **Concepts:** The main purpose of Tasker is to demonstrate important front-end concepts of nowadays about smart client-side applications, such as:
